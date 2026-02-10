@@ -1,0 +1,110 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2.5rem 1.25rem 1rem;
+}
+
+.themeToggle {
+  appearance: none;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: inherit;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.themeToggle:hover {
+  border-color: var(--border-color-strong);
+}
+
+.themeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 0 1.25rem 2.5rem;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+.section {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.paragraph {
+  margin: 0;
+  max-width: 75ch;
+}
+
+.linkList {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.techCard {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.techIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.techName {
+  font-weight: 600;
+}
+
+.footer {
+  padding: 1rem 1.25rem 1.5rem;
+  opacity: 0.7;
+}
