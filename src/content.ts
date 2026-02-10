@@ -34,6 +34,12 @@ export const projectLinks: ProjectLink[] = [
 export const experienceSummary =
   "I’m a senior frontend engineer with over 7 years of experience working primarily with React and TypeScript, and solid experience collaborating in fullstack environments with Node.js. I focus on building clean, maintainable, and scalable systems, with strong attention to architecture, performance, and developer experience. I enjoy owning features end-to-end, making thoughtful technical decisions, and collaborating closely with cross-functional teams. I’m excited about opportunities where I can contribute both technically and strategically while continuing to learn and grow."
 
+export const contact = {
+  linkedInUrl: 'https://www.linkedin.com/in/luis-villa-55792b61/',
+  phoneDisplay: '+54 9381 218-3026',
+  phoneTel: '+5493812183026',
+}
+
 export type Technology = {
   name: string
   Icon: IconType

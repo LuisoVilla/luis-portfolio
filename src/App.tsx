@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { FiMoon, FiSun } from 'react-icons/fi'
 import './App.css'
-import { experienceSummary, projectLinks, technologies } from './content'
+import { contact, experienceSummary, projectLinks, technologies } from './content'
+import { SiLinkedin } from 'react-icons/si'
 
 function App() {
   type Theme = 'light' | 'dark'
@@ -86,6 +87,23 @@ function App() {
                 <span className="techName">{name}</span>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="section sectionPanel" aria-labelledby="contact">
+          <h2 className="sectionTitle" id="contact">
+            Contact
+          </h2>
+
+          <div className="contactRow">
+            <a className="contactLink" href={contact.linkedInUrl} target="_blank" rel="noreferrer">
+              <SiLinkedin className="contactIcon" aria-hidden="true" focusable={false} />
+              <span>LinkedIn</span>
+            </a>
+
+            <a className="contactLink" href={`tel:${contact.phoneTel}`}>
+              <span className="contactPhone">{contact.phoneDisplay}</span>
+            </a>
           </div>
         </section>
       </main>
