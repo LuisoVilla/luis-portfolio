@@ -63,7 +63,7 @@ function App() {
           </ul>
         </section>
 
-        <section className="section" aria-labelledby="experience">
+        <section className="section sectionPanel" aria-labelledby="experience">
           <h2 className="sectionTitle" id="experience">
             Experience
           </h2>
