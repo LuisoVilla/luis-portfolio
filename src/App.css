@@ -147,6 +147,84 @@
   font-weight: 600;
 }
 
+.companyList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.companyCard {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.companyHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.companyLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.companyLogoImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.companyLogoText {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
+.companyRole {
+  font-weight: 800;
+}
+
+.companyName {
+  font-weight: 700;
+}
+
+.companyRole {
+  font-weight: 600;
+}
+
+.companyLocation {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.companyLocation {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.companyDates {
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.companyBullets {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
 .footer {
   padding: 1rem 1.25rem 1.5rem;
   opacity: 0.7;

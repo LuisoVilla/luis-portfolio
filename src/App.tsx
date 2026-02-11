@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FiMoon, FiSun } from 'react-icons/fi'
 import './App.css'
-import { contact, experienceSummary, projectLinks, technologies } from './content'
+import { companies, contact, experienceSummary, projectLinks, technologies } from './content'
 import { SiLinkedin } from 'react-icons/si'
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
     <div className="page">
       <header className="header">
         <div>
-          <h1 className="title">Luis Antonio Villa</h1>
-          <p className="subtitle">Senior Frontend Engineer · React + TypeScript</p>
+          <h1 className="title">Ing. Luis Antonio Villa</h1>
+          <p className="subtitle">Software Engineer · React | Typescript | Node | IA developing | JavaScript | Nextjs | Web | AWS | FullStack</p>
         </div>
 
         <button
@@ -69,6 +69,57 @@ function App() {
             Experience
           </h2>
           <p className="paragraph">{experienceSummary}</p>
+        </section>
+
+        <section className="section" aria-labelledby="companies">
+          <h2 className="sectionTitle" id="companies">
+            Companies
+          </h2>
+          <div className="companyList">
+            {companies.map((company) => {
+              const initials = company.name
+                .split(' ')
+                .filter(Boolean)
+                .slice(0, 2)
+                .map((part) => part[0]?.toUpperCase())
+                .join('')
+
+              return (
+                <article key={`${company.name}-${company.start}-${company.end}`} className="companyCard">
+                  <div className="companyHeader">
+                    <div className="companyLogo" aria-hidden="true">
+                      <span className="companyLogoText">{initials}</span>
+                      {company.logoUrl ? (
+                        <img
+                          className="companyLogoImg"
+                          src={company.logoUrl}
+                          alt=""
+                          loading="lazy"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none'
+                          }}
+                        />
+                      ) : null}
+                    </div>
+                    <div>
+                      {company.role ? <div className="companyRole">{company.role}</div> : null}
+                      <div className="companyName">{company.name}</div>
+                      {company.location ? <div className="companyLocation">{company.location}</div> : null}
+                      <div className="companyDates">
+                        {company.start} – {company.end}
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul className="companyBullets">
+                    {company.descriptions.map((text) => (
+                      <li key={text}>{text}</li>
+                    ))}
+                  </ul>
+                </article>
+              )
+            })}
+          </div>
         </section>
 
         <section className="section" aria-labelledby="technologies">
