@@ -8,12 +8,15 @@ import {
   SiHtml5,
   SiJavascript,
   SiAmazonwebservices,
+  SiMongodb,
   SiNodedotjs,
+  SiPostgresql,
   SiReact,
   SiTypescript,
   SiVercel,
 } from 'react-icons/si'
 import { VscAzure } from 'react-icons/vsc'
+import { DiMsqlServer } from 'react-icons/di'
 
 export type ProjectLink = {
   label: string
@@ -40,8 +43,11 @@ export const experienceSummary =
 
 export const contact = {
   linkedInUrl: 'https://www.linkedin.com/in/luis-villa-55792b61/',
-  phoneDisplay: '+54 9381 218-3026',
-  phoneTel: '+5493812183026',
+  phoneDisplay: '+54 381 218-3026',
+  phoneTel: '+543812183026',
+  countryLabel: 'Argentina',
+  countryFlagSrc: '/flags/ar.svg',
+  countryFlagAlt: 'Bandera de Argentina',
 }
 
 export type Company = {
@@ -90,7 +96,7 @@ export const companies: Company[] = [
     start: '2019-10',
     end: '2020-12',
     descriptions: [
-      'Development of web applications using JavaScript, HTML, CSS, C#, SQL Server, Git, Jira, Bitbucket and .NET Core.',
+      'Worked on a Health Insurance related project, developing web applications using .NET Core, JavaScript, SQL Server and Microsoft Azure (plus Git, Jira and Bitbucket).',
     ],
     logoUrl: '/logos/integra-media.png',
   },
@@ -126,16 +132,24 @@ export type Technology = {
 
 export const technologies: Technology[] = [
   { name: 'React', Icon: SiReact, color: '#61DAFB' },
-  { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
-  { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
-  { name: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
   { name: 'HTML5', Icon: SiHtml5, color: '#E34F26' },
   { name: 'CSS3', Icon: SiCss3, color: '#1572B6' },
+  { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+  { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+
+  { name: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
+
   { name: 'Git', Icon: SiGit, color: '#F05032' },
   { name: 'GitHub', Icon: SiGithub },
+
+  { name: 'SQL Server', Icon: DiMsqlServer, color: '#CC2927' },
+  { name: 'MongoDB', Icon: SiMongodb, color: '#47A248' },
+  { name: 'PostgreSQL', Icon: SiPostgresql, color: '#4169E1' },
+
   { name: 'Docker', Icon: SiDocker, color: '#2496ED' },
-  { name: 'AWS', Icon: SiAmazonwebservices, color: '#FF9900' },
   { name: 'Azure', Icon: VscAzure, color: '#0078D4' },
+  { name: 'AWS', Icon: SiAmazonwebservices, color: '#FF9900' },
   { name: 'Jenkins', Icon: SiJenkins, color: '#D24939' },
+
   { name: 'Vercel', Icon: SiVercel },
 ]
