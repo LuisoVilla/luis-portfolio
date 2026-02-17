@@ -1,7 +1,9 @@
 import type { IconType } from 'react-icons'
 import {
+  SiC,
   SiCss3,
   SiDocker,
+  SiDotnet,
   SiJenkins,
   SiGithub,
   SiGit,
@@ -136,6 +138,9 @@ export const technologies: Technology[] = [
   { name: 'CSS3', Icon: SiCss3, color: '#1572B6' },
   { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
   { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+
+  { name: '.NET Core', Icon: SiDotnet },
+  { name: 'C#', Icon: SiC },
 
   { name: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
 
