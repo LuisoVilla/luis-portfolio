@@ -1,6 +1,7 @@
 import type { IconType } from 'react-icons'
 import {
   SiC,
+  SiNextdotjs,
   SiCss3,
   SiDocker,
   SiDotnet,
@@ -178,4 +179,5 @@ export const technologies: Technology[] = [
   { name: 'Jenkins', Icon: SiJenkins, color: '#D24939' },
 
   { name: 'Vercel', Icon: SiVercel },
+  { name: 'Next.js', Icon: SiNextdotjs },
 ]
